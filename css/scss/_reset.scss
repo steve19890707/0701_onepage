@@ -50,11 +50,15 @@ table {
 input {
 	border: 0;
 	outline: 0;
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 html {
 	-webkit-tap-highlight-color:transparent;
 	font-family: Microsoft JhengHei ;
 	min-width: 1000px;
+}
+
+a {
+	display: block;
 }
