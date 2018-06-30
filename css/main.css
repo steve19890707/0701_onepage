@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  border: 0;
+  outline: 0; }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-family: Microsoft JhengHei;
+  min-width: 1000px; }
+
+html {
+  background: #15181F; }
+
+body {
+  position: relative; }
+
+.background {
+  position: absolute;
+  background: #15181F;
+  width: 100%;
+  padding-bottom: 100vh;
+  z-index: 1;
+  top: 0; }
+
+.login {
+  position: relative;
+  width: 50%;
+  z-index: 999;
+  top: 0;
+  margin: 0 auto; }
+  .login input::-webkit-input-placeholder {
+    color: #fff;
+    text-align: center; }
+  .login input:-ms-input-placeholder {
+    color: #fff;
+    text-align: center; }
+  .login input::-ms-input-placeholder {
+    color: #fff;
+    text-align: center; }
+  .login input::placeholder {
+    color: #fff;
+    text-align: center; }
+  .login li {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .login li.logo {
+      background: url(../images/logo.png) no-repeat bottom;
+      background-size: 100%;
+      width: 50%;
+      padding: 10% 0 18% 0;
+      margin: 0 auto; }
+    .login li.input_area {
+      position: relative;
+      width: 40%;
+      margin: 0 auto;
+      padding-top: 2%; }
+      .login li.input_area input {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background: transparent;
+        color: #fff;
+        font-size: 14px;
+        padding: 8% 10%;
+        width: 100%;
+        border-bottom: 1px solid #fff; }
+        .login li.input_area input.last {
+          border: 0; }
+      .login li.input_area .icon {
+        position: absolute;
+        width: 8%;
+        padding-bottom: 8%;
+        left: 0; }
+        .login li.input_area .icon-login {
+          background: url(../images/user.png) no-repeat;
+          background-size: 100%;
+          top: 23%; }
+        .login li.input_area .icon-password {
+          background: url(../images/lock.png) no-repeat;
+          background-size: 100%;
+          bottom: 14%; }
+    .login li.button {
+      width: 10%;
+      margin: 0 auto;
+      font-size: 0; }
+      .login li.button button {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        background: url(../images/login.png) no-repeat center;
+        background-size: 40%;
+        background-color: #00AAE8;
+        border-radius: 50%;
+        width: 100%;
+        padding-bottom: 100%;
+        border: 0;
+        outline: 0;
+        cursor: pointer; }
+        .login li.button button:hover {
+          background-size: 50%;
+          background-color: #FF6501;
+          -webkit-box-shadow: 0 0 10px rgba(255, 101, 1, 0.65);
+          box-shadow: 0 0 10px rgba(255, 101, 1, 0.65); }
+    .login li a {
+      display: block;
+      width: 38%;
+      margin: 0 auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 3%;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none; }
+
+.aside_bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5% 5% 0 0;
+  width: 5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2% 0;
+  border-radius: 100px;
+  background: transparent;
+  border: 3px solid #00AAE8;
+  z-index: 999;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s; }
+  .aside_bar:hover {
+    border: 3px solid #fff; }
+  .aside_bar ul {
+    font-size: 0;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-perspective-origin: center right;
+    perspective-origin: center right;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+    .aside_bar ul li {
+      position: relative;
+      padding: 50%;
+      margin-bottom: 20%;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      cursor: pointer; }
+      .aside_bar ul li:after {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        color: #fff;
+        font-size: 14px;
+        -webkit-transform: translate(-100%, -50%);
+        -ms-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%); }
+      .aside_bar ul li:hover {
+        -webkit-transform: scale(1.8, 1.8) translate(-25%, 10%) rotateY(-20deg);
+        transform: scale(1.8, 1.8) translate(-25%, 10%) rotateY(-20deg);
+        margin-bottom: 50%; }
+        .aside_bar ul li:hover:after {
+          display: block; }
+        .aside_bar ul li:hover + li {
+          -webkit-transform: scale(1.2, 1.2) translate(-25%, 10%);
+          -ms-transform: scale(1.2, 1.2) translate(-25%, 10%);
+          transform: scale(1.2, 1.2) translate(-25%, 10%); }
+      .aside_bar ul li:nth-last-of-type(1) {
+        margin: 0; }
+        .aside_bar ul li:nth-last-of-type(1):hover {
+          margin-bottom: 20%; }
+      .aside_bar ul li.youtube {
+        background: url(../images/youtube.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.youtube:after {
+          content: 'YOUTUBE'; }
+      .aside_bar ul li.fb {
+        background: url(../images/facebook.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.fb:after {
+          content: 'FACEBOOK'; }
+      .aside_bar ul li.twitter {
+        background: url(../images/twitter.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.twitter:after {
+          content: 'TWITTER'; }
+      .aside_bar ul li.line {
+        background: url(../images/line.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.line:after {
+          content: 'LINE'; }
+      .aside_bar ul li.IG {
+        background: url(../images/instagram.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.IG:after {
+          content: 'INSTAGRAM'; }
+      .aside_bar ul li.pinterest {
+        background: url(../images/pinterest.png) no-repeat center;
+        background-size: 80%; }
+        .aside_bar ul li.pinterest:after {
+          content: 'PINTERSET'; }
+
+@media screen and (max-width: 1000px) {
+  .login {
+    width: 80%; }
+  .aside_bar {
+    width: 10%; } }

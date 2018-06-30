@@ -1,0 +1,14 @@
+// 清除浮動
+
+@mixin afterClearfix {
+    &:after {
+        content: '';
+        clear: both;
+    }
+}
+
+// @keyframes button {
+//     0% {box-shadow: 0; background-color: #00AAE8;}
+//     50% {box-shadow: 0 0 10px rgba(#FF6501,0.65); background-color: #FF6501;}
+//     100% {box-shadow: 0; background-color: #00AAE8;}
+// }

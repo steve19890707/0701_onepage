@@ -1,0 +1,218 @@
+@import 'reset';
+@import 'config';
+
+html {
+    background: #15181F;
+}
+body {
+    position: relative;
+}
+.background {
+    position: absolute;
+    background: #15181F;
+    width: 100%;
+    padding-bottom: 100vh;
+    z-index: 1;
+    top: 0;
+}
+.login {
+    position: relative;
+    width: 50%;
+    z-index: 999;
+    top: 0;
+    margin: 0 auto;
+    input::placeholder {
+        color:#fff;
+        text-align: center;
+    }
+    li {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        box-sizing: border-box;
+        &.logo {
+            background: url(../images/logo.png)no-repeat bottom;
+            background-size: 100%;
+            width: 50%;
+            padding: 10% 0 18% 0;
+            margin: 0 auto;
+        }
+        &.input_area {
+            position: relative;
+            width: 40%;
+            margin: 0 auto;
+            padding-top: 2%;
+            input {
+                box-sizing: border-box;
+                background: transparent;
+                color: #fff;
+                font-size: 14px;
+                padding: 8% 10%;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                &.last {
+                    border: 0;
+                }
+            }
+            .icon {
+                position: absolute;
+                width: 8%;
+                padding-bottom: 8%;
+                left: 0;
+                &-login {
+                    background: url(../images/user.png)no-repeat;
+                    background-size: 100%;
+                    top: 23%;
+                }
+                &-password {
+                    background: url(../images/lock.png)no-repeat;
+                    background-size: 100%;
+                    bottom: 14%;
+                }
+            }
+        }
+        &.button {
+            width: 10%;
+            margin: 0 auto;
+            font-size: 0;
+            button {
+                transition: 0.3s;
+                background: url(../images/login.png)no-repeat center;
+                background-size: 40%;
+                background-color: #00AAE8;
+                border-radius: 50%;
+                width: 100%;
+                padding-bottom: 100%;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                &:hover {
+                    background-size: 50%;
+                    background-color: #FF6501;
+                    box-shadow: 0 0 10px rgba(#FF6501,0.65);
+                }
+            }
+        }
+        a {
+            display: block;
+            width: 38%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 3%;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+}
+
+.aside_bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5% 5% 0 0;
+    width: 5%;
+    box-sizing: border-box;
+    padding: 2% 0;
+    border-radius: 100px;
+    background: transparent;
+    border:3px solid #00AAE8;
+    z-index: 999;
+    transition: 0.8s;
+    &:hover {
+        border:3px solid #fff;
+    }
+    ul {
+        font-size: 0;
+        width: 80%;
+        margin: 0 auto;
+        transition: 0.5s;
+        perspective-origin: center right;
+        perspective: 1000px;
+        li {
+            position: relative;
+            padding: 50%;
+            margin-bottom:20%;
+            transition: 0.2s;
+            cursor: pointer;
+            &:after {
+                display: none;
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                color: #fff;
+                font-size: 14px;
+                transform: translate(-100%,-50%);
+            }
+            &:hover {
+                transform: scale(1.8,1.8) translate(-25%,10%)rotateY(-20deg); 
+                margin-bottom:50%;
+                &:after {
+                    display: block;
+                }
+                +li {
+                    transform: scale(1.2,1.2)translate(-25%,10%);
+
+                }
+            }
+            &:nth-last-of-type(1) {
+                margin: 0;
+                &:hover {
+                    margin-bottom: 20%;
+                }
+            } 
+            &.youtube {
+                background: url(../images/youtube.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'YOUTUBE';
+                }
+            }
+            &.fb {
+                background: url(../images/facebook.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'FACEBOOK';
+                }
+            }
+            &.twitter {
+                background: url(../images/twitter.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'TWITTER';
+                }
+            }
+            &.line {
+                background: url(../images/line.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'LINE';
+                }
+            }
+            &.IG {
+                background: url(../images/instagram.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'INSTAGRAM';
+                }
+            }
+            &.pinterest {
+                background: url(../images/pinterest.png)no-repeat center;
+                background-size: 80%;
+                &:after {
+                    content: 'PINTERSET';
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .login {
+        width: 80%;
+    }
+    .aside_bar {
+        width: 10%;
+    }
+} 
